@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003399"
+   >
+
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_background"
+        android:drawableLeft="@drawable/back"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:text=""
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="124dp"
+        android:fontFamily="@font/featherbold"
+        android:text="Settings"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/backButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/notificationsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_marginStart="16dp"
+        android:text="Notifications"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:fontFamily="@font/featherbold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButton" />
+
+    <Switch
+        android:id="@+id/notificationsSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="66dp"
+        android:thumbTint="#1E1D1D"
+        android:trackTint="#FFFF00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/notificationsLabel"
+        app:layout_constraintBottom_toBottomOf="@+id/notificationsLabel" />
+
+
+    <TextView
+        android:id="@+id/emergencyCallLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Emergency Call"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:fontFamily="@font/featherbold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notificationsLabel" />
+
+    <Switch
+        android:id="@+id/emergencyCallSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="66dp"
+        android:thumbTint="#1E1D1D"
+        android:trackTint="#FFFF00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/emergencyCallLabel"
+        app:layout_constraintBottom_toBottomOf="@+id/emergencyCallLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
